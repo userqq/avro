@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<psalm
+    errorLevel="1"
+    resolveFromConfigFile="true"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns="https://getpsalm.org/schema/config"
+    xsi:schemaLocation="https://getpsalm.org/schema/config vendor/vimeo/psalm/config.xsd"
+    findUnusedBaselineEntry="true"
+    findUnusedCode="true"
+    findUnusedVariablesAndParams="true"
+    findUnusedPsalmSuppress="true"
+    checkForThrowsDocblock="true"
+    checkForThrowsInGlobalScope="true"
+    sealAllMethods="true"
+    sealAllProperties="true"
+>    
+    <projectFiles>
+        <directory name="src" />
+        <ignoreFiles>
+            <directory name="vendor" />
+        </ignoreFiles>
+    </projectFiles>
+
+    <issueHandlers>
+        <MixedArgument errorLevel="suppress" />
+        <MixedOperand errorLevel="suppress" />
+        <MixedMethodCall errorLevel="suppress" />
+        <MixedArrayAccess errorLevel="suppress" />
+        <MixedAssignment errorLevel="suppress" />
+        <MixedArrayOffset errorLevel="suppress" />
+        <MixedInferredReturnType errorLevel="suppress" />
+        <MixedArrayAssignment errorLevel="suppress" />
+        <MixedReturnStatement errorLevel="suppress" />
+        <MixedPropertyTypeCoercion errorLevel="suppress" />
+        <MixedReturnTypeCoercion errorLevel="suppress" />
+        <MixedArgumentTypeCoercion errorLevel="suppress" />
+        <MixedPropertyFetch errorLevel="suppress" />
+        <MixedPropertyAssignment errorLevel="suppress" />
+    </issueHandlers>
+</psalm>

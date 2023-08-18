@@ -1,0 +1,229 @@
+<?xml version="1.0"?>
+<ruleset name="PSR12">
+    <description>The PSR-12 coding standard.</description>
+    <arg name="tab-width" value="4"/>
+    <rule ref="PSR12">
+        <exclude name="Generic.Files.LineLength"/>
+        <exclude name="Generic.WhiteSpace.ScopeIndent.Incorrect"/>
+        <exclude name="Generic.WhiteSpace.ScopeIndent.IncorrectExact"/>
+        <exclude name="PSR2.Classes.PropertyDeclaration.SpacingAfterType"/>
+        <exclude name="PSR2.ControlStructures.SwitchDeclaration.BreakNotNewLine"/>
+        <exclude name="PSR12.Classes.ClassInstantiation.MissingParentheses"/>
+        <exclude name="Squiz.Functions.FunctionDeclarationArgumentSpacing.SpaceBeforeEquals"/>
+        <exclude name="Squiz.Functions.FunctionDeclarationArgumentSpacing.SpacingAfterHint"/>
+        <exclude name="Squiz.Functions.MultiLineFunctionDeclaration.Indent"/>
+        <exclude name="Squiz.WhiteSpace.ScopeClosingBrace.ContentBefore"/>
+        <exclude name="Squiz.WhiteSpace.ScopeKeywordSpacing.Incorrect"/>
+    </rule>
+    <rule ref="Generic.Files.LineEndings">
+        <properties>
+            <property name="eolChar" value="\n"/>
+        </properties>
+    </rule>
+    <rule ref="PSR2.Files.EndFileNewline"/>
+    <rule ref="PSR2.Files.ClosingTag"/>
+    <rule ref="Generic.Files.LineLength">
+        <properties>
+            <property name="lineLimit" value="120"/>
+            <property name="absoluteLineLimit" value="0"/>
+        </properties>
+    </rule>
+    <rule ref="Squiz.WhiteSpace.SuperfluousWhitespace"/>
+    <rule ref="Squiz.WhiteSpace.SuperfluousWhitespace.StartFile">
+        <severity>0</severity>
+    </rule>
+    <rule ref="Squiz.WhiteSpace.SuperfluousWhitespace.EndFile">
+        <severity>0</severity>
+    </rule>
+    <rule ref="Squiz.WhiteSpace.SuperfluousWhitespace.EmptyLines">
+        <severity>0</severity>
+    </rule>
+    <rule ref="Generic.Formatting.DisallowMultipleStatements"/>
+    <rule ref="Generic.WhiteSpace.ScopeIndent">
+        <properties>
+            <property name="ignoreIndentationTokens" type="array">
+                <element value="T_COMMENT"/>
+                <element value="T_DOC_COMMENT_OPEN_TAG"/>
+            </property>
+        </properties>
+    </rule>
+    <rule ref="Generic.WhiteSpace.DisallowTabIndent"/>
+    <rule ref="Generic.PHP.LowerCaseKeyword"/>
+    <rule ref="Generic.PHP.LowerCaseConstant"/>
+    <rule ref="Generic.PHP.LowerCaseType"/>
+    <rule ref="PSR2.Classes.ClassDeclaration"/>
+    <rule ref="Squiz.Scope.MethodScope"/>
+    <rule ref="Squiz.WhiteSpace.ScopeKeywordSpacing"/>
+    <rule ref="Squiz.NamingConventions.ValidVariableName.NotCamelCaps"/>
+    <rule ref="PSR2.Methods.MethodDeclaration"/>
+    <rule ref="PSR2.Methods.FunctionClosingBrace"/>
+    <rule ref="Squiz.Functions.FunctionDeclaration"/>
+    <rule ref="Squiz.Functions.LowercaseFunctionKeywords"/>
+    <rule ref="Squiz.Functions.FunctionDeclarationArgumentSpacing">
+        <properties>
+            <property name="equalsSpacing" value="1"/>
+        </properties>
+    </rule>
+    <rule ref="PEAR.Functions.ValidDefaultValue"/>
+    <rule ref="Squiz.Functions.MultiLineFunctionDeclaration"/>
+    <rule ref="Generic.Functions.FunctionCallArgumentSpacing"/>
+    <rule ref="PSR2.Methods.FunctionCallSignature"/>
+    <rule ref="PSR2.Methods.FunctionCallSignature.SpaceAfterCloseBracket">
+        <severity>0</severity>
+    </rule>
+    <rule ref="PSR2.Methods.FunctionCallSignature.OpeningIndent">
+        <severity>0</severity>
+    </rule>
+    <rule ref="Squiz.ControlStructures.ControlSignature"/>
+    <rule ref="Squiz.WhiteSpace.ControlStructureSpacing.SpacingAfterOpen"/>
+    <rule ref="Squiz.WhiteSpace.ControlStructureSpacing.SpacingBeforeClose"/>
+    <rule ref="Squiz.WhiteSpace.ScopeClosingBrace"/>
+    <rule ref="Squiz.ControlStructures.ForEachLoopDeclaration"/>
+    <rule ref="Squiz.ControlStructures.ForLoopDeclaration">
+        <properties>
+            <property name="ignoreNewlines" value="true"/>
+        </properties>
+    </rule>
+    <rule ref="Squiz.ControlStructures.ForLoopDeclaration.SpacingAfterOpen">
+        <severity>0</severity>
+    </rule>
+    <rule ref="Squiz.ControlStructures.ForLoopDeclaration.SpacingBeforeClose">
+        <severity>0</severity>
+    </rule>
+    <rule ref="Squiz.ControlStructures.LowercaseDeclaration"/>
+    <rule ref="Generic.ControlStructures.InlineControlStructure"/>
+    <rule ref="Squiz.ControlStructures.ForEachLoopDeclaration.AsNotLower">
+        <severity>0</severity>
+    </rule>
+    <rule ref="PSR2.ControlStructures.ElseIfDeclaration"/>
+    <rule ref="PSR2.ControlStructures.SwitchDeclaration"/>
+    <rule ref="Squiz.ControlStructures.ForEachLoopDeclaration.SpaceAfterOpen">
+        <severity>0</severity>
+    </rule>
+    <rule ref="Squiz.ControlStructures.ForEachLoopDeclaration.SpaceBeforeClose">
+        <severity>0</severity>
+    </rule>
+    <rule ref="Generic.WhiteSpace.IncrementDecrementSpacing"/>
+    <rule ref="Squiz.WhiteSpace.CastSpacing"/>
+    <rule ref="Generic.Formatting.SpaceAfterCast">
+        <properties>
+            <property name="ignoreNewlines" value="false" />
+        </properties>
+    </rule>
+    <rule ref="Squiz.PHP.GlobalKeyword" />
+    <rule ref="SlevomatCodingStandard.Arrays.AlphabeticallySortedByKeys" />
+    <rule ref="SlevomatCodingStandard.Arrays.DisallowImplicitArrayCreation" />
+    <rule ref="SlevomatCodingStandard.Arrays.DisallowPartiallyKeyed" />
+    <rule ref="SlevomatCodingStandard.Arrays.MultiLineArrayEndBracketPlacement" />
+    <rule ref="SlevomatCodingStandard.Arrays.ArrayAccess" />
+    <rule ref="SlevomatCodingStandard.Arrays.SingleLineArrayWhitespace" />
+    <rule ref="SlevomatCodingStandard.Arrays.TrailingArrayComma" />
+    <rule ref="SlevomatCodingStandard.Attributes.AttributeAndTargetSpacing" />
+    <rule ref="SlevomatCodingStandard.Attributes.AttributesOrder" />
+    <rule ref="SlevomatCodingStandard.Attributes.DisallowAttributesJoining" />
+    <rule ref="SlevomatCodingStandard.Attributes.DisallowMultipleAttributesPerLine" />
+    <rule ref="SlevomatCodingStandard.Attributes.RequireAttributeAfterDocComment" />
+    <rule ref="SlevomatCodingStandard.Classes.BackedEnumTypeSpacing" />
+    <rule ref="SlevomatCodingStandard.Classes.ClassConstantVisibility" />
+    <rule ref="SlevomatCodingStandard.Classes.ClassLength" />
+    <rule ref="SlevomatCodingStandard.Classes.ClassMemberSpacing" />
+    <rule ref="SlevomatCodingStandard.Classes.ConstantSpacing" />
+    <rule ref="SlevomatCodingStandard.Classes.DisallowMultiConstantDefinition" />
+    <rule ref="SlevomatCodingStandard.Classes.DisallowMultiPropertyDefinition" />
+    <rule ref="SlevomatCodingStandard.Classes.DisallowStringExpressionPropertyFetch" />
+    <rule ref="SlevomatCodingStandard.Classes.EnumCaseSpacing" />
+    <rule ref="SlevomatCodingStandard.Classes.MethodSpacing" />
+    <rule ref="SlevomatCodingStandard.Classes.ModernClassNameReference" />
+    <rule ref="SlevomatCodingStandard.Classes.ParentCallSpacing" />
+    <rule ref="SlevomatCodingStandard.Classes.PropertySpacing" />
+    <rule ref="SlevomatCodingStandard.Classes.RequireSelfReference" />
+    <rule ref="SlevomatCodingStandard.Classes.TraitUseDeclaration" />
+    <rule ref="SlevomatCodingStandard.Classes.TraitUseSpacing" />
+    <rule ref="SlevomatCodingStandard.Classes.UselessLateStaticBinding" />
+    <rule ref="SlevomatCodingStandard.Commenting.AnnotationName" />
+    <rule ref="SlevomatCodingStandard.Commenting.DeprecatedAnnotationDeclaration" />
+    <rule ref="SlevomatCodingStandard.Commenting.DisallowCommentAfterCode" />
+    <rule ref="SlevomatCodingStandard.Commenting.DisallowOneLinePropertyDocComment" />
+    <rule ref="SlevomatCodingStandard.Commenting.DocCommentSpacing" />
+    <rule ref="SlevomatCodingStandard.Commenting.EmptyComment" />
+    <rule ref="SlevomatCodingStandard.Commenting.ForbiddenAnnotations" />
+    <rule ref="SlevomatCodingStandard.Commenting.ForbiddenComments" />
+    <rule ref="SlevomatCodingStandard.Commenting.RequireOneLinePropertyDocComment" />
+    <rule ref="SlevomatCodingStandard.Commenting.UselessFunctionDocComment" />
+    <rule ref="SlevomatCodingStandard.Commenting.UselessInheritDocComment" />
+    <rule ref="SlevomatCodingStandard.ControlStructures.DisallowEmpty" />
+    <rule ref="SlevomatCodingStandard.ControlStructures.DisallowTrailingMultiLineTernaryOperator" />
+    <rule ref="SlevomatCodingStandard.ControlStructures.JumpStatementsSpacing" />
+    <rule ref="SlevomatCodingStandard.ControlStructures.LanguageConstructWithParentheses" />
+    <rule ref="SlevomatCodingStandard.ControlStructures.NewWithParentheses" />
+    <rule ref="SlevomatCodingStandard.ControlStructures.RequireNullCoalesceEqualOperator" />
+    <rule ref="SlevomatCodingStandard.ControlStructures.RequireNullCoalesceOperator" />
+    <rule ref="SlevomatCodingStandard.ControlStructures.RequireNullSafeObjectOperator" />
+    <rule ref="SlevomatCodingStandard.ControlStructures.RequireShortTernaryOperator" />
+    <rule ref="SlevomatCodingStandard.ControlStructures.RequireSingleLineCondition" />
+    <rule ref="SlevomatCodingStandard.ControlStructures.RequireTernaryOperator" />
+    <rule ref="SlevomatCodingStandard.ControlStructures.RequireYodaComparison" />
+    <rule ref="SlevomatCodingStandard.ControlStructures.UselessIfConditionWithReturn" />
+    <rule ref="SlevomatCodingStandard.ControlStructures.UselessTernaryOperator" />
+    <rule ref="SlevomatCodingStandard.Exceptions.DeadCatch" />
+    <rule ref="SlevomatCodingStandard.Exceptions.ReferenceThrowableOnly" />
+    <rule ref="SlevomatCodingStandard.Exceptions.RequireNonCapturingCatch" />
+    <rule ref="SlevomatCodingStandard.Functions.ArrowFunctionDeclaration" />
+    <rule ref="SlevomatCodingStandard.Functions.DisallowNamedArguments" />
+    <rule ref="SlevomatCodingStandard.Functions.RequireArrowFunction" />
+    <rule ref="SlevomatCodingStandard.Functions.RequireSingleLineCall" />
+    <rule ref="SlevomatCodingStandard.Functions.RequireTrailingCommaInCall" />
+    <rule ref="SlevomatCodingStandard.Functions.RequireTrailingCommaInClosureUse" />
+    <rule ref="SlevomatCodingStandard.Functions.RequireTrailingCommaInDeclaration" />
+    <rule ref="SlevomatCodingStandard.Functions.StaticClosure" />
+    <rule ref="SlevomatCodingStandard.Functions.UnusedInheritedVariablePassedToClosure" />
+    <rule ref="SlevomatCodingStandard.Functions.UselessParameterDefaultValue" />
+    <rule ref="SlevomatCodingStandard.Namespaces.AlphabeticallySortedUses" />
+    <rule ref="SlevomatCodingStandard.Namespaces.DisallowGroupUse" />
+    <rule ref="SlevomatCodingStandard.Namespaces.FullyQualifiedGlobalConstants" />
+    <rule ref="SlevomatCodingStandard.Namespaces.FullyQualifiedGlobalFunctions" />
+    <rule ref="SlevomatCodingStandard.Namespaces.MultipleUsesPerLine" />
+    <rule ref="SlevomatCodingStandard.Namespaces.NamespaceDeclaration" />
+    <rule ref="SlevomatCodingStandard.Namespaces.NamespaceSpacing" />
+    <rule ref="SlevomatCodingStandard.Namespaces.RequireOneNamespaceInFile" />
+    <rule ref="SlevomatCodingStandard.Namespaces.UseDoesNotStartWithBackslash" />
+    <rule ref="SlevomatCodingStandard.Namespaces.UseFromSameNamespace" />
+    <rule ref="SlevomatCodingStandard.Namespaces.UseSpacing" />
+    <rule ref="SlevomatCodingStandard.Namespaces.UselessAlias" />
+    <rule ref="SlevomatCodingStandard.Numbers.RequireNumericLiteralSeparator" />
+    <rule ref="SlevomatCodingStandard.Operators.DisallowEqualOperators" />
+    <rule ref="SlevomatCodingStandard.Operators.NegationOperatorSpacing" />
+    <rule ref="SlevomatCodingStandard.Operators.RequireCombinedAssignmentOperator" />
+    <rule ref="SlevomatCodingStandard.Operators.RequireOnlyStandaloneIncrementAndDecrementOperators" />
+    <rule ref="SlevomatCodingStandard.Operators.SpreadOperatorSpacing" />
+    <rule ref="SlevomatCodingStandard.PHP.DisallowDirectMagicInvokeCall" />
+    <rule ref="SlevomatCodingStandard.PHP.DisallowReference" />
+    <rule ref="SlevomatCodingStandard.PHP.ForbiddenClasses" />
+    <rule ref="SlevomatCodingStandard.PHP.OptimizedFunctionsWithoutUnpacking" />
+    <rule ref="SlevomatCodingStandard.PHP.ReferenceSpacing" />
+    <rule ref="SlevomatCodingStandard.PHP.RequireNowdoc" />
+    <rule ref="SlevomatCodingStandard.PHP.ShortList" />
+    <rule ref="SlevomatCodingStandard.PHP.TypeCast" />
+    <rule ref="SlevomatCodingStandard.PHP.UselessParentheses" />
+    <rule ref="SlevomatCodingStandard.PHP.UselessSemicolon" />
+    <rule ref="SlevomatCodingStandard.Strings.DisallowVariableParsing" />
+    <rule ref="SlevomatCodingStandard.TypeHints.DeclareStrictTypes">
+        <properties>
+            <property name="spacesCountAroundEqualsSign" type="int" value="0" />
+        </properties>
+    </rule>
+    <rule ref="SlevomatCodingStandard.TypeHints.DisallowArrayTypeHintSyntax" />
+    <rule ref="SlevomatCodingStandard.TypeHints.LongTypeHints" />
+    <rule ref="SlevomatCodingStandard.TypeHints.NullTypeHintOnLastPosition" />
+    <rule ref="SlevomatCodingStandard.TypeHints.NullableTypeForNullDefaultValue" />
+    <rule ref="SlevomatCodingStandard.TypeHints.ParameterTypeHintSpacing" />
+    <rule ref="SlevomatCodingStandard.TypeHints.ReturnTypeHintSpacing" />
+    <rule ref="SlevomatCodingStandard.TypeHints.UnionTypeHintFormat" />
+    <rule ref="SlevomatCodingStandard.TypeHints.UselessConstantTypeHint" />
+    <rule ref="SlevomatCodingStandard.Variables.DisallowVariableVariable" />
+    <rule ref="SlevomatCodingStandard.Variables.DisallowSuperGlobalVariable" />
+    <rule ref="SlevomatCodingStandard.Variables.DuplicateAssignmentToVariable" />
+    <rule ref="SlevomatCodingStandard.Variables.UnusedVariable" />
+    <rule ref="SlevomatCodingStandard.Variables.UselessVariable" />
+    <rule ref="SlevomatCodingStandard.Whitespaces.DuplicateSpaces" />
+</ruleset>

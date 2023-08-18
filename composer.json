@@ -1,0 +1,26 @@
+{
+    "name": "userqq/avro",
+    "type": "library",
+    "license": "MIT",
+    "config": {
+        "platform": {
+            "php": "8.2"
+        },
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": true
+        }
+    },
+    "require": {
+        "php": "^8.2"
+    },
+    "require-dev": {
+        "psalm/phar": "^5.14",
+        "squizlabs/php_codesniffer": "^3.7",
+        "slevomat/coding-standard": "^8.13"
+    },
+    "autoload": {
+        "psr-4": {
+            "UserQQ\\Avro\\": "src/"
+        }
+    }
+}
